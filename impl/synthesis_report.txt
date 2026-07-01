@@ -1,0 +1,40 @@
+================================================================
+Smart Digital Lock System — Synthesis Report
+Target Device : xc7a35tcpg236-1
+Tool Version  : AMD Vivado 2025.2
+Top Module    : smart_lock_top
+================================================================
+
+RTL Elaboration
+─────────────────────────────────────────────
+Modules elaborated : 6
+  - smart_lock_top   (structural)
+  - keypad_scanner   (RTL)
+  - lock_controller  (RTL)
+  - seg7_driver      (RTL)
+  - clock_divider    (RTL)
+  - lock_pkg         (package)
+
+Synthesis Results
+─────────────────────────────────────────────
+Slice LUTs     :  181
+Slice Registers:  163
+Bonded IOB     :   26
+BUFGCTRL       :    1
+BRAM           :    0
+DSP            :    0
+
+Warnings  : 5  (non-critical, all reviewed)
+Errors    : 0  ✅
+Latches   : 0  ✅ (fully synchronous design)
+
+FSM Encoding
+─────────────────────────────────────────────
+FSM Name       : lock_controller/state
+Encoding Style : Auto (one-hot)
+States         : 7
+  INIT, WAIT_FOR_KEY, ENTER_PASS, CHECK_PASS,
+  UNLOCKED, ERROR_STATE, ALARM
+
+Status: SYNTHESIS PASSED ✅
+================================================================

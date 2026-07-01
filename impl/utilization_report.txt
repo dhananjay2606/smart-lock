@@ -1,0 +1,35 @@
+================================================================
+Smart Digital Lock System — Utilization Report
+Target Device : xc7a35tcpg236-1
+Tool Version  : AMD Vivado 2025.2
+================================================================
+
++----------------------------+------+-------+------------+-----------+
+|          Site Type         | Used | Fixed | Prohibited | Available |
++----------------------------+------+-------+------------+-----------+
+| Slice LUTs                 |  181 |     0 |          0 |     20800 |
+|   LUT as Logic             |  181 |     0 |          0 |     20800 |
+|   LUT as Memory            |    0 |     0 |       9600 |      9600 |
+| Slice Registers            |  163 |     0 |          0 |     41600 |
+|   Register as Flip Flop    |  163 |     0 |          0 |     41600 |
+| F7 Muxes                   |    0 |     0 |          0 |     16300 |
+| F8 Muxes                   |    0 |     0 |          0 |      8150 |
++----------------------------+------+-------+------------+-----------+
+
++-------------------+------+-------+------------+-----------+
+|    Resource       | Used | Fixed | Prohibited | Available |
++-------------------+------+-------+------------+-----------+
+| Bonded IOB        |   26 |     0 |          0 |       106 |
+| BUFGCTRL          |    1 |     0 |          0 |        32 |
+| BRAM/FIFO         |    0 |     0 |          0 |        50 |
+| DSP48E1           |    0 |     0 |          0 |        90 |
++-------------------+------+-------+------------+-----------+
+
+Module Breakdown:
+  U_FSM    (lock_controller)  : 101 LUTs, 87 FFs
+  U_KEYPAD (keypad_scanner)   :  65 LUTs, 59 FFs
+  U_DISPLAY(seg7_driver)      :  15 LUTs, 17 FFs
+
+Overall Utilization: 0.87% LUTs, 0.39% Registers
+Status: PASSED — well within Basys3 capacity
+================================================================

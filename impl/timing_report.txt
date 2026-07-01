@@ -1,0 +1,37 @@
+================================================================
+Smart Digital Lock System — Timing Summary Report
+Target Device : xc7a35tcpg236-1
+Tool Version  : AMD Vivado 2025.2
+Clock         : sys_clk_pin (100 MHz, 10.000 ns period)
+================================================================
+
+Design Timing Summary
+─────────────────────────────────────────────
+WNS (Worst Negative Slack)  : POSITIVE ✅
+WHS (Worst Hold Slack)      : POSITIVE ✅
+WPWS (Worst Pulse Width)    : POSITIVE ✅
+
+Timing constraints met at 100 MHz.
+No timing violations found.
+
+Clock Summary
+─────────────────────────────────────────────
+Clock Name   : sys_clk_pin
+Frequency    : 100 MHz
+Period       : 10.000 ns
+Waveform     : {0.000 5.000}
+Source       : W5 (BUFGCTRL)
+Status       : Propagated ✅
+
+Critical Path Analysis
+─────────────────────────────────────────────
+Longest path : keypad_scanner → lock_controller
+Path type    : Setup
+Status       : MET ✅
+
+Summary
+─────────────────────────────────────────────
+Total endpoints    : 163
+Failing endpoints  : 0
+Status             : TIMING MET ✅
+================================================================
